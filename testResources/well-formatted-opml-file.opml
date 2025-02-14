@@ -1,0 +1,12 @@
+<opml version="2.0">
+    <head>
+        <title>Feeds</title>
+    </head>
+    <body>
+        <outline text="A text" title="A title" type="rss" htmlUrl="https://a.content.example.net" xmlUrl="https://a.feed.example.net"/>
+        <outline text="some folder" title="some folder">
+            <outline text="B text" title="B title" type="rss" htmlUrl="https://b.feed.example.net" xmlUrl="https://b.content.example.net"/>
+            <outline text="C text" title="C title" type="rss" htmlUrl="https://c.feed.example.net" xmlUrl="https://c.content.example.net"/>
+        </outline>
+    </body>
+</opml>
