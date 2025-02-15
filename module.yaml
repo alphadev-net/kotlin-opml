@@ -1,12 +1,12 @@
 product: jvm/app
 
 dependencies:
-  - "org.jetbrains.kotlinx:kotlinx-io-core:0.4.0"
-  - "io.github.pdvrieze.xmlutil:core:0.90.1"
-  - "io.github.pdvrieze.xmlutil:serialization:0.90.1"
+  - "org.jetbrains.kotlinx:kotlinx-io-core:0.6.0"
+  - "io.github.pdvrieze.xmlutil:core:0.90.3"
+  - "io.github.pdvrieze.xmlutil:serialization:0.90.3"
 
 test-dependencies:
-  - "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.8.1"
+  - "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.1"
 
 settings:
   kotlin:
