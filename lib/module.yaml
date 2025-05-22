@@ -1,10 +1,13 @@
-product: jvm/app
+product:
+  type: lib
+  platforms:
+    - jvm
+    - android
 
 dependencies:
-  - "org.jetbrains.kotlinx:kotlinx-io-core:0.7.0"
+  - "org.jetbrains.kotlinx:kotlinx-io-core:0.7.0": exported
   - "io.github.pdvrieze.xmlutil:core:0.90.3"
   - "io.github.pdvrieze.xmlutil:serialization:0.90.3"
-  - "com.github.ajalt.clikt:clikt:5.0.3"
 
 test-dependencies:
   - "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.1"
