@@ -12,7 +12,7 @@ import net.alphadev.opml.import.parseOpmlFile
 
 internal fun formatFile(input: String): String? {
     val parsedOpml = parseOpmlFile(input) ?: return null
-    print(parsedOpml.printDebugInformation)
+    println(parsedOpml.printDebugInformation)
     return formatOpmlFile(parsedOpml)
 }
 
