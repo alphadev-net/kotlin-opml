@@ -1,6 +1,5 @@
 package net.alphadev.opml.import
 
-import kotlinx.coroutines.test.runTest
 import kotlinx.io.readString
 import net.alphadev.periodicos.testing.readResource
 import kotlin.test.Test
@@ -8,7 +7,7 @@ import kotlin.test.assertEquals
 
 class OpmlParserTest {
     @Test
-    fun testValidOpmlIsReadCorrectly() = runTest {
+    fun testValidOpmlIsReadCorrectly() {
         readResource("some.opml") {
             val parsed = parseOpmlFile(it.readString())
 

@@ -9,9 +9,6 @@ dependencies:
   - "io.github.pdvrieze.xmlutil:core:0.90.3"
   - "io.github.pdvrieze.xmlutil:serialization:0.90.3"
 
-test-dependencies:
-  - "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.1"
-
 settings:
   kotlin:
     serialization: enabled
