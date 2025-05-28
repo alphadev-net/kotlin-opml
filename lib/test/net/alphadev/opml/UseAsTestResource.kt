@@ -1,4 +1,4 @@
-package net.alphadev.periodicos.testing
+package net.alphadev.opml
 
 import kotlinx.io.Source
 import kotlinx.io.buffered
