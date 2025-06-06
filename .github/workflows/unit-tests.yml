@@ -1,5 +1,9 @@
 name: Unit Tests
 
+permissions:
+  checks: write
+  pull-requests: write
+
 on:
   push:
     branches: [ "main" ]
@@ -19,6 +23,6 @@ jobs:
 
       - name: Publish Test Results
         uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()
+        if: (!cancelled())
         with:
           files: '**/build/reports/**/**/*.xml'
