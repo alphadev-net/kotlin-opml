@@ -16,3 +16,9 @@ jobs:
       
       - name: Run Unit Tests
         run: ./amper test
+
+      - name: Publish Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          files: '**/build/reports/**/**/*.xml'
