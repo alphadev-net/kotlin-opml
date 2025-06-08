@@ -1,4 +1,4 @@
-product: jvm/app
+product: macos/app
 
 dependencies:
   - ../lib
@@ -7,6 +7,7 @@ dependencies:
 settings:
   publishing:
     name: opml-tool
-
+  native:
+    entryPoint: net.alphadev.opml.main
 apply:
   - ../publish.module-template.yaml
