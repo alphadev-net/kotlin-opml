@@ -12,3 +12,8 @@ dependencies:
 settings:
   kotlin:
     serialization: enabled
+  publishing:
+    name: kotlin-opml
+
+apply:
+  - ../publish.module-template.yaml

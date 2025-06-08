@@ -3,3 +3,10 @@ product: jvm/app
 dependencies:
   - ../lib
   - "com.github.ajalt.clikt:clikt:5.0.3"
+
+settings:
+  publishing:
+    name: opml-tool
+
+apply:
+  - ../publish.module-template.yaml
