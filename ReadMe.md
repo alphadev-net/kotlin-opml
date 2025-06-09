@@ -2,6 +2,7 @@
 
 [![Build Status](https://github.com/janseeger/kotlin-opml/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/janseeger/kotlin-opml/actions/workflows/unit-tests.yml)
 [![GitHub License](https://img.shields.io/github/license/janseeger/kotlin-opml)](https://github.com/janseeger/kotlin-opml/blob/main/LICENSE)
+[![GitHub Tag](https://img.shields.io/github/v/tag/janseeger/kotlin-opml)](https://github.com/janseeger/kotlin-opml/tags)
 
 A standalone library that allows easy parsing and writing of OPML formatted files.
 
