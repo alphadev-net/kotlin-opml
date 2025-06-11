@@ -4,14 +4,14 @@
     </head>
     <body>
         <outline type="rss" text="A text" xmlUrl="https://a.feed.example.net" title="A title"
-                 htmlUrl="https://a.content.example.net"/>
+                 htmlUrl="https://a.content.example.net" />
         <outline text="some folder" title="some folder">
             <outline title="B title" text="B text"
                      htmlUrl="https://b.feed.example.net"
-                     xmlUrl="https://b.content.example.net" type="rss"/>
+                     xmlUrl="https://b.content.example.net" type="rss" />
             <outline title="C title" text="C text"
                      htmlUrl="https://c.feed.example.net"
-                     xmlUrl="https://c.content.example.net" type="rss"/>
+                     xmlUrl="https://c.content.example.net" type="rss" />
         </outline>
     </body>
 </opml>
