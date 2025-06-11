@@ -1,7 +1,7 @@
 [versions]
 ajalt-clikt = "5.0.3"
 kotlinx-io = "0.7.0"
-pdvrieze-xmlutil = "0.90.3"
+pdvrieze-xmlutil = "0.91.1"
 
 [libraries]
 ajalt-clikt = { group = "com.github.ajalt.clikt", name = "clikt", version.ref = "ajalt-clikt" }
