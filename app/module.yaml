@@ -2,7 +2,7 @@ product: jvm/app
 
 dependencies:
   - ../lib
-  - "com.github.ajalt.clikt:clikt:5.0.3"
+  - $libs.ajalt.clikt
 
 settings:
   publishing:

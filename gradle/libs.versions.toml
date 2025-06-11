@@ -1,0 +1,10 @@
+[versions]
+ajalt-clikt = "5.0.3"
+kotlinx-io = "0.7.0"
+pdvrieze-xmlutil = "0.90.3"
+
+[libraries]
+ajalt-clikt = { group = "com.github.ajalt.clikt", name = "clikt", version.ref = "ajalt-clikt" }
+kotlinx-io-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-io-core", version.ref = "kotlinx-io" }
+pdvrieze-xmlutil-core = { group = "io.github.pdvrieze.xmlutil", name = "core", version.ref = "pdvrieze-xmlutil"}
+pdvrieze-xmlutil-serialization = { group = "io.github.pdvrieze.xmlutil", name = "serialization", version.ref = "pdvrieze-xmlutil"}
