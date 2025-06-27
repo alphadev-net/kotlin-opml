@@ -4,8 +4,12 @@ import kotlinx.serialization.decodeFromString
 import net.alphadev.opml.format.OpmlFile
 import nl.adaptivity.xmlutil.serialization.XML
 
+private val xml by lazy {
+    XML()
+}
+
 fun parseOpmlFile(input: String): OpmlFile? = try {
-    XML().decodeFromString<OpmlFile>(input)
+    xml.decodeFromString<OpmlFile>(input)
 } catch (_: Throwable) {
     null
 }

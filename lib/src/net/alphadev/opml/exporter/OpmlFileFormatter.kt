@@ -5,10 +5,14 @@ import nl.adaptivity.xmlutil.serialization.XML
 
 private const val INDENT_SIZE = 4
 
-fun formatOpmlFile(opmlFile: OpmlFile): String? = try {
+private val xml by lazy {
     XML {
         indent = INDENT_SIZE
-    }.encodeToString(OpmlFile.serializer(), opmlFile) + "\n"
+    }
+}
+
+fun formatOpmlFile(opmlFile: OpmlFile): String? = try {
+    xml.encodeToString(OpmlFile.serializer(), opmlFile) + "\n"
 } catch (_: Throwable) {
     null
 }
