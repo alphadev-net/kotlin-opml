@@ -9,6 +9,9 @@ dependencies:
   - $libs.pdvrieze.xmlutil.core
   - $libs.pdvrieze.xmlutil.serialization
 
+test-dependencies:
+  - $libs.dachlatten.io
+
 settings:
   kotlin:
     serialization: enabled

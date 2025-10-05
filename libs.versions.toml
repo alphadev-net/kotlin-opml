@@ -2,9 +2,11 @@
 ajalt-clikt = "5.0.3"
 kotlinx-io = "0.8.0"
 pdvrieze-xmlutil = "0.91.2"
+dachlatten = "0.0.100"
 
 [libraries]
 ajalt-clikt = { group = "com.github.ajalt.clikt", name = "clikt", version.ref = "ajalt-clikt" }
+dachlatten-io = { group = "de.sipgate", name = "dachlatten-io", version.ref = "dachlatten" }
 kotlinx-io-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-io-core", version.ref = "kotlinx-io" }
 pdvrieze-xmlutil-core = { group = "io.github.pdvrieze.xmlutil", name = "core", version.ref = "pdvrieze-xmlutil"}
 pdvrieze-xmlutil-serialization = { group = "io.github.pdvrieze.xmlutil", name = "serialization", version.ref = "pdvrieze-xmlutil"}

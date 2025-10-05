@@ -1,7 +1,7 @@
 package net.alphadev.opml.import
 
+import de.sipgate.dachlatten.io.readResource
 import kotlinx.io.readString
-import net.alphadev.opml.readResource
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
