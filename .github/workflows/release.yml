@@ -33,7 +33,7 @@ jobs:
       - name: Set up credentials
         run: |
           echo "alphadev.username=GitHub" > local.properties
-          echo "alpdahev.password=$ALPHADEV_TOKEN" >> local.properties
+          echo "alpdadev.password=$ALPHADEV_TOKEN" >> local.properties
         env:
           ALPHADEV_TOKEN: ${{ secrets.ALPHADEV_DEPLOY_TOKEN }}
 
