@@ -49,4 +49,4 @@ jobs:
           prerelease: false
 
       - name: Publish
-        run: ./amper publish github
+        run: ./amper publish alphaDev
