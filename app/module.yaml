@@ -4,6 +4,9 @@ dependencies:
   - ../lib
   - $libs.ajalt.clikt
 
+test-dependencies:
+  - $libs.dachlatten.io
+
 settings:
   publishing:
     name: opml-tool
