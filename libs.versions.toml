@@ -1,7 +1,7 @@
 [versions]
 ajalt-clikt = "5.0.3"
 dachlatten = "0.0.101"
-kotlinx-io = "0.8.1"
+kotlinx-io = "0.8.2"
 pdvrieze-xmlutil = "0.91.3"
 
 [libraries]
