@@ -11,7 +11,7 @@ private val xml by lazy {
     }
 }
 
-fun formatOpmlFile(opmlFile: OpmlFile): String? = try {
+public fun formatOpmlFile(opmlFile: OpmlFile): String? = try {
     xml.encodeToString(OpmlFile.serializer(), opmlFile) + "\n"
 } catch (_: Throwable) {
     null

@@ -8,7 +8,7 @@ private val xml by lazy {
     XML()
 }
 
-fun parseOpmlFile(input: String): OpmlFile? = try {
+public fun parseOpmlFile(input: String): OpmlFile? = try {
     xml.decodeFromString<OpmlFile>(input)
 } catch (_: Throwable) {
     null

@@ -5,6 +5,6 @@ import nl.adaptivity.xmlutil.serialization.XmlSerialName
 
 @Serializable
 @XmlSerialName("body", namespace = "", prefix = "")
-data class OpmlBody(
+public data class OpmlBody(
     val outlines: List<OpmlOutline>
 )

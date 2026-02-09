@@ -6,7 +6,7 @@ import nl.adaptivity.xmlutil.serialization.XmlSerialName
 
 @Serializable
 @XmlSerialName("outline", namespace = "", prefix = "")
-data class OpmlOutline(
+public data class OpmlOutline(
     @SerialName("text") val text: String,
     @SerialName("title") val title: String,
     @SerialName("type") val type: String? = null,

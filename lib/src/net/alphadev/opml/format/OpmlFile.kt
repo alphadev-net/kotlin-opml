@@ -6,7 +6,7 @@ import nl.adaptivity.xmlutil.serialization.XmlSerialName
 
 @Serializable
 @XmlSerialName(value = "opml", namespace = "", prefix = "")
-data class OpmlFile(
+public data class OpmlFile(
     @SerialName("version") val version: String,
     val head: OpmlHead,
     val body: OpmlBody

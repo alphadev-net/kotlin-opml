@@ -6,6 +6,6 @@ import nl.adaptivity.xmlutil.serialization.XmlSerialName
 
 @Serializable
 @XmlSerialName("head", namespace = "", prefix = "")
-data class OpmlHead(
+public data class OpmlHead(
     @XmlElement val title: String
 )
