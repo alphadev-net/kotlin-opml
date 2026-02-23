@@ -3,7 +3,9 @@ package net.alphadev.opml.format
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.SerialName
 import nl.adaptivity.xmlutil.serialization.XmlSerialName
+import kotlin.time.ExperimentalTime
 
+@ExperimentalTime
 @Serializable
 @XmlSerialName(value = "opml", namespace = "", prefix = "")
 public data class OpmlFile(

@@ -10,6 +10,9 @@ test-dependencies:
 settings:
   publishing:
     name: opml-tool
+  kotlin:
+    optIns:
+      - kotlin.time.ExperimentalTime
 
 apply:
   - ../publish.module-template.yaml

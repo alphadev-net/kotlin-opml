@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+    <head>
+        <title>Current RSS Subscriptions</title>
+        <dateCreated>2026-02-23T00:16:47Z</dateCreated>
+    </head>
+    <body>
+        <outline text="Jan" title="Jan">
+            <outline type="rss" text="Jan‘s Stuff" title="Jan‘s Stuff" xmlUrl="https://jan.alphadev.net/feed.json" htmlUrl="https://jan.alphadev.net/"/>
+        </outline>
+    </body>
+</opml>
