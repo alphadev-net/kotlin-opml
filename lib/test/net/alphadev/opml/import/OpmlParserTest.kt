@@ -9,7 +9,7 @@ class OpmlParserTest {
     @Test
     fun testValidOpmlIsReadCorrectly() {
         readResource("some.opml") {
-            val parsed = parseOpmlFile(it.readString())
+            val parsed = parseOpmlFile(it.readString()).getOrThrow()
 
             assertEquals("2.0", parsed!!.version)
             assertEquals("Feeds", parsed.head.title)

@@ -23,9 +23,7 @@ internal class OpmlTool: CliktCommand() {
     override fun run() {
         val duration = measureTime {
             val path = Path(path.toAbsolutePath().toString())
-            val fileContents = readFile(path)
-            val formattedOpml = formatFile(fileContents) ?: return
-            writeFile(path, formattedOpml)
+            normalizeOpml(path)
         }
 
         println(" in $duration")

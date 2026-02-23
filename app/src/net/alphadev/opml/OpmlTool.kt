@@ -10,11 +10,27 @@ import net.alphadev.opml.format.OpmlFile
 import net.alphadev.opml.format.OpmlOutline
 import net.alphadev.opml.import.parseOpmlFile
 
-internal fun formatFile(input: String): String? {
-    val parsedOpml = parseOpmlFile(input) ?: return null
+internal fun normalizeOpml(path: Path) {
+    val fileContents = readFile(path)
+
+    val parsedOpml = parseOpmlFile(fileContents)
+        .onFailure {
+            print(it.message)
+            return
+        }.getOrNull() ?: return
+
     print(parsedOpml.printDebugInformation)
-    return formatOpmlFile(parsedOpml)
+
+    val formattedOpml = formatOpmlFile(parsedOpml)
+        .onFailure {
+            print(it.message)
+            return
+        }.getOrNull() ?: return
+
+    writeFile(path, formattedOpml)
 }
+
+internal fun readFile(file: Path) = SystemFileSystem.source(file).buffered().readString()
 
 private val OpmlFile.printDebugInformation: String
     get() {
@@ -36,8 +52,6 @@ private val OpmlFile.printDebugInformation: String
 
         return "Processed $numGroups Groups containing $numItems Items"
     }
-
-internal fun readFile(file: Path) = SystemFileSystem.source(file).buffered().readString()
 
 internal fun writeFile(destFile: Path, opmlContents: String) =
     SystemFileSystem.sink(destFile)
