@@ -1,3 +1,5 @@
+@file:Suppress("NO_EXPLICIT_VISIBILITY_IN_API_MODE_WARNING")
+
 package net.alphadev.opml.import
 
 import de.sipgate.dachlatten.io.readResource
@@ -13,7 +15,7 @@ class CurrentReaderOpmlTest {
         readResource("current-reader.opml") {
             val parsed = parseOpmlFile(it.readString()).getOrThrow()
 
-            assertEquals("2.0", parsed!!.version)
+            assertEquals("2.0", parsed.version)
             assertEquals("Current RSS Subscriptions", parsed.head.title)
             assertEquals(1, parsed.body.outlines.size)
 
