@@ -9,7 +9,7 @@ test-dependencies:
 
 settings:
   publishing:
-    name: opml-tool
+    artifactId: opml-tool
   kotlin:
     optIns:
       - kotlin.time.ExperimentalTime
